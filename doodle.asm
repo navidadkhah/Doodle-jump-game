@@ -1,5 +1,3 @@
- 
-
 DATA segment para 'DATA'
     
 	Window_width DW 140h       ; the width of the window is 320 pixels
@@ -64,8 +62,7 @@ CODE segment para 'CODE'
         check_time:
 		
 		    cmp game_active, 00h
-			je  show_game_over
-			
+		    je  show_game_over	
 			
             mov ah,2ch
             int 21h
